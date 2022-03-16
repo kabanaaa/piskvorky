@@ -3,11 +3,35 @@
   background-color: rgba(97, 93, 173, 1) 0%;
 }
 
+@font-face {
+  font-family: 'Lobster';
+  src: url(Lobster-Regular.ttf);
+}
+
 .all {
   position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  color: #ffffff;
+  width: 10.5cm;
+  height: 16cm;
+  text-align: center;
+}
+
+.all__text {
+  background-color: #283e50;
+  text-align: center;
+}
+
+.all__head {
+  font-family: 'Lobster';
+  font-size: 20px;
+}
+
+.all__description {
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
 .all__button {
@@ -15,4 +39,20 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: stretch;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.all__button--rules {
+  display: flex;
+  align-items: stretch;
+  width: 10.5cm;
+  height: 1cm;
+}
+
+.all__button--startplay {
+  display: flex;
+  align-items: stretch;
+  width: 10.5cm;
+  height: 1cm;
 }
