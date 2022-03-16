@@ -1,0 +1,18 @@
+.html {
+  box-sizing: border-box;
+  background-color: rgba(97, 93, 173, 1) 0%;
+}
+
+.all {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.all__button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
