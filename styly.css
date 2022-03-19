@@ -2,35 +2,48 @@
   font-family: 'Lobster';
   src: url(Lobster-Regular.ttf);
 }
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(97, 93, 173, 1) 0%,
+    rgba(255, 200, 218, 1) 100%
+  );
+  padding: 113px 188px 377px 188px;
+  background-repeat: no-repeat;
+}
+
 .container {
   background-color: #283e50;
-  width: 10.5cm;
+  width: 396px;
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+}
+
+img {
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
 }
 
 .all {
-  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   color: #ffffff;
-  width: 10.5cm;
-  height: 6cm;
   text-align: center;
 }
 
 .all__text {
   background-color: #283e50;
-  text-align: center;
 }
 
 .all__head {
   font-family: 'Lobster';
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .all__description {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0px 20px 20px 20px;
   font-family: sans-serif;
   font-size: 16px;
 }
@@ -38,23 +51,19 @@
 .all__button {
   display: flex;
   flex-direction: column;
+  width: 396px;
+  height: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   align-items: center;
   font-family: sans-serif;
   font-size: 16px;
   text-decoration: none;
   color: white;
-  position: relative;
-  padding: 0;
 }
 
 .all__button--rules {
-  display: flex;
-  align-items: center;
-  width: 10.5cm;
-  height: 1cm;
   background-color: #1fcca4;
-  text-align: center;
-  padding-top: 20px;
 }
 
 .all__button--rules:hover {
@@ -62,12 +71,7 @@
 }
 
 .all__button--startplay {
-  display: flex;
-  align-items: stretch;
-  width: 10.5cm;
-  height: 1cm;
   background-color: #0197f6;
-  padding-top: 15px;
 }
 
 .all__button--startplay:hover {
