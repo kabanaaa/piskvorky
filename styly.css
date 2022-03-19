@@ -2,10 +2,11 @@
   font-family: 'Lobster';
   src: url(Lobster-Regular.ttf);
 }
-
-.img {
-  display: block;
+.container {
+  background-color: #283e50;
+  width: 10.5cm;
 }
+
 .all {
   position: relative;
   display: flex;
