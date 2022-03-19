@@ -3,6 +3,9 @@
   src: url(Lobster-Regular.ttf);
 }
 
+.img {
+  display: block;
+}
 .all {
   position: relative;
   display: flex;
@@ -25,6 +28,8 @@
 }
 
 .all__description {
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: sans-serif;
   font-size: 16px;
 }
@@ -48,6 +53,7 @@
   height: 1cm;
   background-color: #1fcca4;
   text-align: center;
+  padding-top: 15px;
 }
 
 .all__button--rules:hover {
@@ -60,6 +66,7 @@
   width: 10.5cm;
   height: 1cm;
   background-color: #0197f6;
+  padding-top: 15px;
 }
 
 .all__button--startplay:hover {
