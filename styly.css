@@ -16,14 +16,12 @@ body {
 .container {
   background-color: #283e50;
   width: 396px;
-  border-top-left-radius: 4%;
-  border-top-right-radius: 4%;
+  border-radius: 4% 4% 0 0;
 }
 
 img {
   display: flex;
-  border-top-left-radius: 4%;
-  border-top-right-radius: 4%;
+  border-radius: 4% 4% 0 0;
   width: 396px;
   height: 250px;
 }
