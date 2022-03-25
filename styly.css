@@ -21,8 +21,11 @@ body {
 }
 
 img {
+  display: flex;
   border-top-left-radius: 4%;
   border-top-right-radius: 4%;
+  width: 396px;
+  height: 250px;
 }
 
 .all {
