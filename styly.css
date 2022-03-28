@@ -38,7 +38,8 @@ img {
   background-color: #283e50;
 }
 
-.all__head {
+.all__head,
+.nadpisPravidla {
   font-family: 'Lobster';
   font-size: 21px;
 }
@@ -47,6 +48,12 @@ img {
   padding: 0px 20px 20px 20px;
   font-family: sans-serif;
   font-size: 16px;
+}
+
+ol li {
+  text-align: left;
+  font-family: sans-serif;
+  padding: 0px 20px 20px;
 }
 
 .all__button {
@@ -63,11 +70,13 @@ img {
   color: white;
 }
 
-.all__button--rules {
+.all__button--rules,
+.all__button--uvod {
   background-color: #1fcca4;
 }
 
-.all__button--rules:hover {
+.all__button--rules,
+.all__button--uvod:hover {
   background-color: #1cbb96;
 }
 
