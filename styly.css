@@ -21,7 +21,6 @@ body {
 .container {
   background-color: #283e50;
   width: 396px;
-
   border-radius: 4% 4% 0 0;
   overflow: hidden;
 }
@@ -86,7 +85,6 @@ figcaption {
 .all__button {
   display: flex;
   flex-direction: column;
-  height: 90px;
   padding-top: 20px;
   padding-bottom: 20px;
   align-items: center;
