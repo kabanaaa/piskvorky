@@ -7,14 +7,15 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   background: linear-gradient(
     180deg,
     rgba(97, 93, 173, 1) 0%,
     rgba(255, 200, 218, 1) 100%
   );
   background-repeat: repeat-x;
-  min-height: 100vh;
+  min-height: 150vh;
+  padding: 10% 10% 10% 10%;
 }
 
 .container {
@@ -22,7 +23,6 @@ body {
   width: 396px;
   border-radius: 4% 4% 0 0;
   overflow: hidden;
-  margin: 10% 10% 10% 10%;
 }
 
 .obrazekhlavni {
@@ -85,8 +85,6 @@ figcaption {
 .all__button {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px;
   align-items: center;
   font-family: sans-serif;
   font-size: 16px;
@@ -98,6 +96,8 @@ figcaption {
 .all__button--uvod {
   background-color: #1fcca4;
   min-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .all__button--rules,
@@ -108,6 +108,8 @@ figcaption {
 .all__button--startplay {
   background-color: #0197f6;
   min-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .all__button--startplay:hover {
