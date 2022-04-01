@@ -20,9 +20,10 @@ html {
 
 .container {
   background-color: #283e50;
-  width: 396px;
+  width: 80%;
   border-radius: 4% 4% 0 0;
   overflow: hidden;
+  margin: auto;
 }
 
 .obrazekhlavni {
@@ -43,6 +44,8 @@ html {
 
 .all__text {
   background-color: #283e50;
+  border-radius: 4% 4% 0 0;
+  min-width: 100%;
 }
 
 .all__head,
@@ -73,6 +76,10 @@ ol li {
 .all__imageRules {
   display: flex;
   flex-wrap: wrap;
+}
+
+figure.img {
+  min-width: 100%;
 }
 
 figcaption {
@@ -116,7 +123,13 @@ figcaption {
   background-color: #0090e9;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 360px) {
+  .container {
+    min-width: 80%;
+  }
+}
+
+@media (min-width: 800px) {
   .container {
     min-width: 80%;
   }
@@ -131,13 +144,7 @@ figcaption {
   }
 }
 
-@media (min-width: 360px) {
-  .container {
-    min-width: 80%;
-  }
-}
-
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .container {
     min-width: 80%;
   }
