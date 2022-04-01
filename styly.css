@@ -78,8 +78,8 @@ ol li {
   flex-wrap: wrap;
 }
 
-figure.img {
-  min-width: 100%;
+figure img {
+  width: 100%;
 }
 
 figcaption {
