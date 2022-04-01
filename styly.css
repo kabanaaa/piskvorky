@@ -3,18 +3,18 @@
   src: url(Lobster-Regular.ttf);
 }
 
-body {
+html {
   background: linear-gradient(
     180deg,
     rgba(97, 93, 173, 1) 0%,
     rgba(255, 200, 218, 1) 100%
   );
-  padding: 80px 188px 377px 80px;
 }
 
 .container {
   background-color: #283e50;
   width: 396px;
+  margin: 10% 10% 10% 10%;
   border-radius: 4% 4% 0 0;
 }
 
