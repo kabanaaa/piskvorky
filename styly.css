@@ -56,6 +56,12 @@ ol li {
   padding: 0px 20px 20px;
 }
 
+.filter {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
 .all__button {
   display: flex;
   flex-direction: column;
