@@ -3,19 +3,27 @@
   src: url(Lobster-Regular.ttf);
 }
 
-html {
+* {
+  box-sizing: border-box;
+}
+
+body {
   background: linear-gradient(
     180deg,
     rgba(97, 93, 173, 1) 0%,
     rgba(255, 200, 218, 1) 100%
   );
+  background-repeat: repeat-x;
+  min-height: 100vh;
+  padding: 10% 10% 10% 10%;
 }
 
 .container {
   background-color: #283e50;
   width: 396px;
-  margin: 10% 10% 10% 10%;
+
   border-radius: 4% 4% 0 0;
+  overflow: hidden;
 }
 
 .obrazekhlavni {
