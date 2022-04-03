@@ -19,7 +19,7 @@ html {
 }
 
 .container,
-.containerRules {
+.containerPravidla {
   background-color: #283e50;
   width: 400px;
   border-radius: 4% 4% 0 0;
@@ -28,11 +28,11 @@ html {
   margin-top: 100px;
 }
 
-.pictureMain {
+.obrazekhlavni {
   display: flex;
   border-radius: 4% 4% 0 0;
   max-width: 100%;
-  max-width: 100%;
+  min-width: 100%;
   height: 250px;
 }
 
@@ -51,7 +51,7 @@ html {
 }
 
 .all__head,
-.nadpisRules {
+.nadpisPravidla {
   font-family: 'Lobster';
   font-size: 21px;
 }
@@ -102,7 +102,7 @@ figcaption {
 }
 
 .all__button--rules,
-.all__button--home {
+.all__button--uvod {
   background-color: #1fcca4;
   min-width: 100%;
   padding-top: 20px;
@@ -110,7 +110,7 @@ figcaption {
 }
 
 .all__button--rules,
-.all__button--home:hover {
+.all__button--uvod:hover {
   background-color: #1cbb96;
 }
 
@@ -125,8 +125,14 @@ figcaption {
   background-color: #0090e9;
 }
 
+@media (max-width: 300px) {
+  .containerPravidla {
+    min-width: 80%;
+  }
+}
+
 @media (min-width: 800px) {
-  .containerRules {
+  .containerPravidla {
     width: 80%;
   }
 
