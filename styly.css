@@ -20,10 +20,11 @@ html {
 
 .container {
   background-color: #283e50;
-  width: 80%;
+  width: 400px;
   border-radius: 4% 4% 0 0;
   overflow: hidden;
   margin: auto;
+  margin-top: 100px;
 }
 
 .obrazekhlavni {
@@ -123,38 +124,18 @@ figcaption {
   background-color: #0090e9;
 }
 
-@media (max-width: 360px) {
-  .container {
-    min-width: 80%;
-  }
-}
-
 @media (min-width: 800px) {
   .container {
     min-width: 80%;
   }
 
-  figure {
+  .all__imageRules {
     display: flex;
     flex-wrap: wrap;
   }
 
-  img {
-    max-width: calc((100% / 2));
-  }
-}
-
-@media (min-width: 1000px) {
-  .container {
-    min-width: 80%;
-  }
-
   figure {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  img {
-    max-width: calc((100% / 2));
+    width: calc((50% - 40px));
+    margin: 0px 20px 0px 20px;
   }
 }
