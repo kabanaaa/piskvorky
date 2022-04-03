@@ -125,12 +125,6 @@ figcaption {
   background-color: #0090e9;
 }
 
-@media (max-width: 300px) {
-  .containerPravidla {
-    min-width: 80%;
-  }
-}
-
 @media (min-width: 800px) {
   .containerPravidla {
     width: 80%;
