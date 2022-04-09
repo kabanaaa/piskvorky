@@ -193,11 +193,11 @@ figcaption {
   border-radius: 0.3em;
 }
 
-.button__home:hover {
+.button__home:hover :focus {
   background-color: #1cbb96;
 }
 
-.button__restart:hover {
+.button__restart:hover :focus {
   background-color: #0090e9;
 }
 
@@ -205,14 +205,13 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid black;
-  background-color: black;
 }
 
 button {
   width: 10%;
   aspect-ratio: 1 / 1;
   border: 1.2px solid black;
-  background-color: rgb(212, 190, 222);
+  background-color: transparent;
 }
 button:hover {
   filter: brightness(110%);
