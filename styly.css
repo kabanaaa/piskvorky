@@ -159,16 +159,16 @@ figcaption {
 .gameHTML {
   display: flex;
   justify-content: center;
+  min-width: 260px;
 }
 .gameContainer {
   margin: auto;
-  max-width: 70%;
   max-height: 70%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  width: 650px;
+  min-width: 280px;
   max-width: 80vmin;
-  width: 80%;
 }
 
 .gameNadpis {
