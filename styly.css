@@ -150,6 +150,10 @@ figcaption {
 }
 
 /* styl pro hra.html */
+.gameBody {
+  max-width: 80vmin;
+}
+
 .gameContainer {
   width: 400px;
   margin: auto;
