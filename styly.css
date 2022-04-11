@@ -15,7 +15,7 @@ html {
   );
   background-repeat: repeat-x;
   min-height: 150vh;
-  padding: 5% 10% 10% 10%;
+  padding: 2% 10% 0% 10%;
 }
 
 .container,
@@ -150,8 +150,13 @@ figcaption {
 }
 
 /* styl pro hra.html */
+.gameBody {
+  max-width: 80vmin;
+}
 .gameContainer {
   margin: auto;
+  max-width: 80vmin;
+  max-height: 80vmin;
 }
 
 .gameNadpis {
@@ -159,7 +164,7 @@ figcaption {
   font-family: 'Lobster';
   font-size: 80px;
   text-align: center;
-  margin: 5px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
 }
 .gameAll {
   display: flex;
