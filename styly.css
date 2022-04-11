@@ -150,13 +150,14 @@ figcaption {
 }
 
 /* styl pro hra.html */
-.gameBody {
+.gameHTML {
   max-width: 80vmin;
 }
+
 .gameContainer {
   margin: auto;
-  max-width: 80vmin;
-  max-height: 80vmin;
+  max-width: 70%;
+  max-height: 70%;
 }
 
 .gameNadpis {
