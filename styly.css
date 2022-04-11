@@ -129,6 +129,10 @@ figcaption {
   .container {
     width: auto;
   }
+
+  .gameContainer {
+    width: auto;
+  }
 }
 
 @media (min-width: 800px) {
@@ -151,11 +155,17 @@ figcaption {
 
 /* styl hry
  */
+
+.gameHTML {
+  display: flex;
+  justify-content: center;
+}
 .gameContainer {
   margin: auto;
   max-width: 70%;
   max-height: 70%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   max-width: 80vmin;
   width: 80%;
@@ -170,6 +180,7 @@ figcaption {
 }
 .gameAll {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding-bottom: 15px;
 }
