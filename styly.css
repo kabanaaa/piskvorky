@@ -14,8 +14,8 @@ html {
     rgba(255, 200, 218, 1) 100%
   );
   background-repeat: repeat-x;
-  min-height: 150vh;
-  padding: 2% 10% 0% 10%;
+  min-height: 110vh;
+  padding: 2% 5% 0% 5%;
 }
 
 .container,
