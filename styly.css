@@ -150,12 +150,7 @@ figcaption {
 }
 
 /* styl pro hra.html */
-.gameBody {
-  max-width: 80vmin;
-}
-
 .gameContainer {
-  width: 400px;
   margin: auto;
 }
 
@@ -164,6 +159,7 @@ figcaption {
   font-family: 'Lobster';
   font-size: 80px;
   text-align: center;
+  margin: 5px 0px 15px 0px;
 }
 .gameAll {
   display: flex;
