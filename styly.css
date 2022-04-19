@@ -166,7 +166,6 @@ figcaption {
   max-height: 70%;
   display: flex;
   flex-direction: column;
-  width: 650px;
   min-width: 280px;
   max-width: 80vmin;
 }
@@ -195,6 +194,8 @@ figcaption {
   filter: invert(100%);
   width: 0.8em;
   height: 0.8em;
+  /*   display: inline-block;
+ */
 }
 
 .button__home {
@@ -211,11 +212,19 @@ figcaption {
   border-radius: 0.3em;
 }
 
-.button__home:hover :focus {
+.button__home:hover {
   background-color: #1cbb96;
 }
 
-.button__restart:hover :focus {
+.button__home:focus {
+  background-color: #1cbb96;
+}
+
+.button__restart:hover {
+  background-color: #0090e9;
+}
+
+.button__restart :focus {
   background-color: #0090e9;
 }
 
