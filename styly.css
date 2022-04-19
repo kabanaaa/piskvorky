@@ -235,3 +235,11 @@ button {
 .btn:hover {
   opacity: 0.7;
 }
+
+.board__field--circle {
+  background-image: url('https://raw.githubusercontent.com/Czechitas-podklady-WEB/Ukol-Piskvorky-2/main/podklady/circle.svg');
+}
+
+.board__field--cross {
+  background-image: url('cross.svg');
+}
