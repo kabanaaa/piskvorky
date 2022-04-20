@@ -247,8 +247,12 @@ button:hover {
 
 .gameArea--circle {
   background-image: url('circle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .gameArea--cross {
   background-image: url('cross.svg');
+  background-position: center;
+  background-repeat: no-repeat;
 }

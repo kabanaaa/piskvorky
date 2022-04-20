@@ -1,4 +1,8 @@
 const buttons = document.querySelectorAll('button');
+const kolecko = 'circle';
+const krizek = 'cross';
+const tah = document.querySelector('.gameFilter');
+
 const tahKolecko = (event) => {
   event.target.classList.add('gameArea--circle');
 };
