@@ -241,14 +241,14 @@ button {
   opacity: 0.5;
 }
 
-.btn:hover {
+button:hover {
   opacity: 0.7;
 }
 
-.board__field--circle {
-  background-image: url('https://raw.githubusercontent.com/Czechitas-podklady-WEB/Ukol-Piskvorky-2/main/podklady/circle.svg');
+.gameArea--circle {
+  background-image: url('circle.svg');
 }
 
-.board__field--cross {
+.gameArea--cross {
   background-image: url('cross.svg');
 }
