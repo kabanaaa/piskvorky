@@ -235,13 +235,17 @@ figcaption {
 button {
   width: 10%;
   aspect-ratio: 1 / 1;
-  border: 1.2px solid black;
+  border: 1px solid black;
   opacity: 0.55;
 }
 
 button:hover:enabled,
 button:focus:enabled {
   opacity: 0.75;
+  border: 2px solid black;
+  border-radius: 2px;
+  border-top: solid white;
+  border-left: solid white;
 }
 
 @keyframes zoom {
@@ -253,17 +257,15 @@ button:focus:enabled {
   }
 }
 .gameArea--circle {
-  background: url('circle.svg') no-repeat center;
+  background: url('circle.svg') no-repeat center/70%;
   opacity: 1;
   animation: zoom;
   animation-duration: 0.15s;
-  border-radius: 2px;
 }
 
 .gameArea--cross {
-  background: url('cross.svg') no-repeat center;
+  background: url('cross.svg') no-repeat center/70%;
   opacity: 1;
   animation: zoom;
   animation-duration: 0.15s;
-  border-radius: 2px;
 }
