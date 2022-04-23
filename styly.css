@@ -241,9 +241,8 @@ button {
 
 button:hover:enabled,
 button:focus:enabled {
-  opacity: 0.75;
-  border: 2px solid black;
-  border-radius: 2px;
+  opacity: 0.6;
+  border-radius: 3px;
   border-top: solid white;
   border-left: solid white;
 }
