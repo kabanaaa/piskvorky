@@ -194,8 +194,6 @@ figcaption {
   filter: invert(100%);
   width: 0.8em;
   height: 0.8em;
-  /*   display: inline-block;
- */
 }
 
 .button__home {
@@ -238,21 +236,34 @@ button {
   width: 10%;
   aspect-ratio: 1 / 1;
   border: 1.2px solid black;
-  opacity: 0.5;
+  opacity: 0.55;
 }
 
-button:hover {
-  opacity: 0.7;
+button:hover:enabled,
+button:focus:enabled {
+  opacity: 0.75;
 }
 
+@keyframes zoom {
+  0% {
+    background-size: 0;
+  }
+  100% {
+    background-size: 65%;
+  }
+}
 .gameArea--circle {
-  background-image: url('circle.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url('circle.svg') no-repeat center;
+  opacity: 1;
+  animation: zoom;
+  animation-duration: 0.15s;
+  border-radius: 2px;
 }
 
 .gameArea--cross {
-  background-image: url('cross.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url('cross.svg') no-repeat center;
+  opacity: 1;
+  animation: zoom;
+  animation-duration: 0.15s;
+  border-radius: 2px;
 }
