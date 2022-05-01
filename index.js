@@ -99,8 +99,11 @@ const isWinningMove = (button) => {
 
 let winner = 'křížky';
 if (hraje === 'cross') {
-  winner = 'kroužky'};
-  
-buttons.addEventListener('click', isWinningMove {
-  alert(`Vyhrál ${winner}`)
-});
+  winner = 'kroužky';
+}
+
+const button = document.querySelector('button');
+button.addEventListener('click', isWinningMove);
+if (isWinningMove === true) {
+  alert(`Vyhrál ${winner}`);
+}
