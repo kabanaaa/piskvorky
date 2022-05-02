@@ -2,31 +2,17 @@ let hraje = 'circle';
 const hrac = document.querySelector('.gameText img');
 const buttons = document.querySelectorAll('button');
 
-const tahKolecko = (event) => {
-  event.target.classList.add(`gameArea--${hraje}`);
-  event.target.disabled = true;
-  if (hraje === 'circle') {
-    hraje = 'cross';
-  } else {
-    hraje = 'circle';
-  }
-  hrac.src = `${hraje}.svg`;
-};
-
-for (let i = 0; i < buttons.length; i += 1) {
-  buttons[i].addEventListener('click', tahKolecko);
-}
-
 const getSymbol = (button) => {
   if (button.classList.contains('gameArea--cross')) {
-    return 'cross';
+    return 'křížek';
   } else if (button.classList.contains('gameArea--circle')) {
-    return 'circle';
+    return 'kolečko';
   }
+  return undefined;
 };
 
 const boardSize = 10;
-const btnElm = document.querySelectorAll('.gameArea');
+const btnElm = document.querySelectorAll('.gameArea button');
 const getField = (row, column) => {
   return btnElm[row * boardSize + column];
 };
@@ -97,13 +83,25 @@ const isWinningMove = (button) => {
   return false;
 };
 
-let winner = 'křížky';
-if (hraje === 'cross') {
-  winner = 'kroužky';
-}
+const tahKolecko = (event) => {
+  event.target.classList.add(`gameArea--${hraje}`);
+  event.target.disabled = true;
+  if (hraje === 'circle') {
+    hraje = 'cross';
+  } else {
+    hraje = 'circle';
+  }
+  hrac.src = `${hraje}.svg`;
 
-const button = document.querySelector('button');
-button.addEventListener('click', isWinningMove);
-if (isWinningMove === true) {
-  alert(`Vyhrál ${winner}`);
+  const winner = isWinningMove(event.target);
+  if (winner) {
+    const symbol = getSymbol(event.target);
+    if (confirm(`Vyhrál ${symbol}. Chcete spustit novou hru?`) === true) {
+      location.reload();
+    }
+  }
+};
+
+for (let i = 0; i < buttons.length; i += 1) {
+  buttons[i].addEventListener('click', tahKolecko);
 }
